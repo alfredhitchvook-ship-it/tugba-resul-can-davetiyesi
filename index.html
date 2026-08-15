@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuğba & Resul Can - Düğün Davetiyesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Invitation Card -->
+    <div class="container">
+        <div class="invitation-card">
+            <!-- Left Side - Sealed Envelope -->
+            <div class="envelope-side">
+                <div class="envelope">
+                    <div class="envelope-pattern"></div>
+                    <h1 class="couple-names">Tuğba<br>& <br>Resul Can</h1>
+                    <div class="seal" onclick="openInvitation()">
+                        <div class="seal-circle"></div>
+                        <p class="seal-text">DAVETİ AÇ</p>
+                    </div>
+                    <p class="date-bottom">29 EKİM 2026</p>
+                </div>
+            </div>
+
+            <!-- Right Side - Invitation Details -->
+            <div class="details-side">
+                <div class="details-content">
+                    <p class="subtitle">BİRLİKTE DAHA GÜZEL</p>
+                    <h2 class="title">Tuğba<br>& <br>Resul Can</h2>
+                    <p class="description">EN ÖZEL GÜNÜMÜZDE<br>SİZLERİ ARAMIZDA GÖRMEKTEN<br>MUTLULUK DUYARIZ.</p>
+                    
+                    <div class="event-details">
+                        <div class="detail-item">
+                            <span class="icon">📅</span>
+                            <p>29 EKİM 2026<br>PERŞEMBE</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">⏰</span>
+                            <p>19.00</p>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📍</span>
+                            <p>VELORA<br>DAVET EVİ</p>
+                        </div>
+                    </div>
+
+                    <p class="location">MACERA PARK, 2. COŞKUN SK.<br>M BLOK NO:13</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Side Menu Navigation -->
+    <div class="menu-sidebar">
+        <nav class="menu-nav">
+            <div class="menu-item" onclick="showPage('anasayfa')">
+                <span class="menu-icon">🏠</span>
+                <span class="menu-label">Anasayfa</span>
+            </div>
+            <div class="menu-item" onclick="showPage('hikayemiz')">
+                <span class="menu-icon">💕</span>
+                <span class="menu-label">Hikayemiz</span>
+            </div>
+            <div class="menu-item" onclick="showPage('galeri')">
+                <span class="menu-icon">📸</span>
+                <span class="menu-label">Galeri</span>
+            </div>
+            <div class="menu-item" onclick="showPage('bilgiler')">
+                <span class="menu-icon">ℹ️</span>
+                <span class="menu-label">Bilgiler</span>
+            </div>
+            <div class="menu-item" onclick="showPage('konum')">
+                <span class="menu-icon">📍</span>
+                <span class="menu-label">Konum</span>
+            </div>
+            <div class="menu-item" onclick="showPage('gunumuz')">
+                <span class="menu-icon">📝</span>
+                <span class="menu-label">Geri Sayım</span>
+            </div>
+            <div class="menu-item" onclick="showPage('rsvp')">
+                <span class="menu-icon">✉️</span>
+                <span class="menu-label">RSVP</span>
+            </div>
+            <div class="menu-item" onclick="showPage('muzik')">
+                <span class="menu-icon">🎵</span>
+                <span class="menu-label">Müzik</span>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Page Content Modal -->
+    <div id="pageModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closePage()">&times;</button>
+            <div id="pageContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
